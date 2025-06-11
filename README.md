@@ -26,12 +26,12 @@ To run this project locally, you will need a PHP server environment (like XAMPP,
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
+    git [clone <your-repository-url>](https://github.com/Gh0styTongue/Nintendo-Music-App-Viewer.git)
     ```
 
 2.  **Navigate to the project directory:**
     ```bash
-    cd <project-directory>
+    cd Nintendo-Music-App-Viewer
     ```
 
 3.  **Start the PHP built-in web server:**
