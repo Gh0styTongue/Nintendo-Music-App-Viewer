@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteBase /
+
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^$ index.php [L]
+
+RewriteRule ^news/?$                       router.php?route=news                     [L,QSA]
+RewriteRule ^notices/?$                    router.php?route=notices                  [L,QSA]
+RewriteRule ^related/([^/]+)/?$            router.php?route=related&id=$1           [L,QSA]
+RewriteRule ^playlist/([^/]+)/?$           router.php?route=playlist&id=$1          [L,QSA]
+RewriteRule ^playlist/([^/]+)/tracks/([^/]+)/?$        router.php?route=playlist/tracks&game=$1&pid=$2       [L,QSA]
+RewriteRule ^playlist/([^/]+)/tracks/([^/]+)/track/([^/]+)/?$ router.php?route=playlist/track&game=$1&pid=$2&tid=$3 [L,QSA]
+
+RewriteRule ^ - [R=404,L]
