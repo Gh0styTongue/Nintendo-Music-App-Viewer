@@ -1,5 +1,7 @@
 # Nintendo Music App Viewer
 
+# I no longer mantain this.
+
 A web-based application for browsing and listening to music from Nintendo's game catalog. This project interfaces with Nintendo's public APIs to fetch data on games, news, playlists, and tracks, presenting it in a clean, user-friendly interface.
 
 ## 🌟 Features
